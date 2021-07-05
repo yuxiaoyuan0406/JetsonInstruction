@@ -2,10 +2,10 @@ cmake_minimum_required(VERSION 3.2)
 
 project(torchcv)
 
-set(CMAKE_PREFIX_PATH /home/vip/archiconda3/envs/torch/lib/python3.6/site-packages/torch/share/cmake)
+set(CMAKE_PREFIX_PATH /your/libtorch/dir/here)
 set(CMAKE_INSTALL_PREFIX /usr/local)
 set(CMAKE_BUILD_TYPE Release)
-set(OPENCV_EXTRA_MODULES_PATH /home/vip/opencv_contrib/modules)
+set(OPENCV_EXTRA_MODULES_PATH /your/opencv_contrib/dir/here)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED TRUE)
 
