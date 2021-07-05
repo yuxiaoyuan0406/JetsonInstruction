@@ -1,5 +1,11 @@
-# torch_2
+# torchcv
 
-an example of using libtorch on vscode
+an example of using libtorch and opencv
 
-an example of creating model in cpp
+To build and run, follow instractions bellow. 
+
+```bash
+mkdir build && cd build
+cmake ..
+make && ./torchcv
+```
