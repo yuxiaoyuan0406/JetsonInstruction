@@ -32,9 +32,23 @@ Anaconda官方之前只提供了x86的版本
 
 ## pytorch
 
+英伟达很良心得为大家准备了官方编译得[PyTorch](https://forums.developer.nvidia.com/t/pytorch-for-jetson-version-1-9-0-now-available/72048)  
+也提供了官方的安装说明，直接去官网查看
+
 ## libtorch
+
+上一步安装的torch包含了C++的库文件即libtorch  
+使用指令`python -c 'import torch;print(torch.utils.cmake_prefix_path)'`可以查看目录  
+注意要在安装了torch的conda环境中执行这个指令
+然后将输出的结果设置为CMake脚本的参数`CMAKE_PREFIX_PATH`
+这里将给出一个示例工程作为参考  
+__todo__
 
 ## OpenCV
 
-## 其他
+OpenCV如果只需要在python上使用可以用conda安装  
+如果要用C++而且需要最新版本，只能从源码编译  
+直接参考Qengineering给出的[教程](https://github.com/Qengineering/Install-OpenCV-Jetson-Nano)  
 
+## 其他
+__todo__
