@@ -8,5 +8,5 @@ To build, follow instractions bellow.
 ```bash
 mkdir build && cd build
 cmake ..
-make
+make && ./torch_example
 ```
