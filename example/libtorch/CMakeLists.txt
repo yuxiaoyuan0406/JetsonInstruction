@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.2)
 
-project(NNet)
+project(torch_example)
 
 set(CMAKE_PREFIX_PATH /home/vip/archiconda3/envs/torch/lib/python3.6/site-packages/torch/share/cmake)
 
