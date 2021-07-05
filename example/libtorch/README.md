@@ -3,7 +3,7 @@
 an example of using libtorch on vscode  
 an example of creating model in cpp  
 
-To build, follow instractions bellow. 
+To build and run, follow instractions bellow. 
 
 ```bash
 mkdir build && cd build
