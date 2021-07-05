@@ -1,12 +1,10 @@
-# Jetson使用说明  
+# JetsonInstructon
 
 An instraction for coding and other shit on Jetson nano  
-简要的Jetson Nano使用说明，包括安装环境等。
 
-## 系统烧录和SSD启动
+## System and boot from ssd
 
-
-## 安装conda
+## conda
 
 ## pytorch
 
@@ -14,4 +12,4 @@ An instraction for coding and other shit on Jetson nano
 
 ## OpenCV
 
-## 其他
+## one more thing
