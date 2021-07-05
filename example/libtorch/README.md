@@ -1,4 +1,4 @@
-# torch_2
+# libtorch example
 
 an example of using libtorch on vscode
 
