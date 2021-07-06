@@ -38,8 +38,8 @@ Anaconda官方之前只提供了x86的版本，最近刚更新了ARM64平台的�
 
 上一步安装的torch包含了C++的库文件即libtorch  
 使用指令`python -c 'import torch;print(torch.utils.cmake_prefix_path)'`可以查看目录  
-注意要在安装了torch的conda环境中执行这个指令
-然后将输出的结果设置为CMake脚本的参数`CMAKE_PREFIX_PATH`
+__注意要在安装了torch的conda环境中执行这个指令__  
+然后将输出的结果设置为CMake脚本的参数`CMAKE_PREFIX_PATH`  
 这里给出一个[示例工程](https://github.com/yuxiaoyuan0406/JetsonInstruction/tree/main/example/libtorch)作为参考  
 
 ## OpenCV
