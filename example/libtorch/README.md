@@ -10,3 +10,5 @@ mkdir build && cd build
 cmake ..
 make && ./torch_example
 ```
+
+Ref: https://github.com/alantess/learntorch/tree/main/torchscript/L1
