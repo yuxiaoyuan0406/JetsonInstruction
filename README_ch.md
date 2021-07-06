@@ -29,10 +29,34 @@ Anaconda官方之前只提供了x86的版本，最近刚更新了ARM64平台的�
 笔者使用的是[Archiconda](https://github.com/Archiconda/build-tools)  
 直接下载脚本安装  
 
-## pytorch
+## pytorch和torchvision
 
 英伟达很良心得为大家准备了官方编译的[PyTorch](https://forums.developer.nvidia.com/t/pytorch-for-jetson-version-1-9-0-now-available/72048)  
 也提供了官方的安装说明，直接去官网查看
+
+torchvision安装参考Qengineering的[教程](https://qengineering.eu/install-pytorch-on-jetson-nano.html)
+
+验证安装
+
+```python
+import torch
+print(torch.__version__)
+print(torch.cuda.is_available())
+import torchvision
+print(torchvision.__version__)
+```
+
+可能会报错
+
+```
+Python 3.6.13 | packaged by conda-forge | (default, Feb 19 2021, 05:46:38)
+[GCC 9.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import torch
+Illegal instruction (core dumped)
+```
+
+这是numpy 1.19.5 的[issue](https://github.com/numpy/numpy/issues/18131)，使用指令`pip install numpy==1.19.4`降级可以解决
 
 ## libtorch
 
