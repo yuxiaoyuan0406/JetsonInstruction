@@ -24,15 +24,14 @@ LABEL primary
 ## conda
 
 常用linux写代码的比较熟悉[Anaconda](https://www.anaconda.com/products/individual)  
-Anaconda官方之前只提供了x86的版本  
-最近刚更新了ARM64平台的支持，但本人没有尝试过，这里不推荐也不反对
+Anaconda官方之前只提供了x86的版本，最近刚更新了ARM64平台的支持，但本人没有尝试过，这里不推荐也不反对
 
 笔者使用的是[Archiconda](https://github.com/Archiconda/build-tools)  
 直接下载脚本安装  
 
 ## pytorch
 
-英伟达很良心得为大家准备了官方编译得[PyTorch](https://forums.developer.nvidia.com/t/pytorch-for-jetson-version-1-9-0-now-available/72048)  
+英伟达很良心得为大家准备了官方编译的[PyTorch](https://forums.developer.nvidia.com/t/pytorch-for-jetson-version-1-9-0-now-available/72048)  
 也提供了官方的安装说明，直接去官网查看
 
 ## libtorch
@@ -41,8 +40,7 @@ Anaconda官方之前只提供了x86的版本
 使用指令`python -c 'import torch;print(torch.utils.cmake_prefix_path)'`可以查看目录  
 注意要在安装了torch的conda环境中执行这个指令
 然后将输出的结果设置为CMake脚本的参数`CMAKE_PREFIX_PATH`
-这里将给出一个示例工程作为参考  
-__todo__
+这里给出一个[示例工程](https://github.com/yuxiaoyuan0406/JetsonInstruction/tree/main/example/libtorch)作为参考  
 
 ## OpenCV
 
