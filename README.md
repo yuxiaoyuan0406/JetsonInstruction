@@ -29,10 +29,34 @@ Anaconda.org used to only support some x86 version. Recently they updated a ARM6
 I'm using [Archiconda](https://github.com/Archiconda/build-tools).  
 One can download the script and run it easily.  
 
-## pytorch
+## pytorch & torchvision
 
 Nvidia has a compiled-for-jetson version of [PyTorch](https://forums.developer.nvidia.com/t/pytorch-for-jetson-version-1-9-0-now-available/72048).  
 They offered a instraction as well. Check it on their website. 
+
+To install torchvision, check this [instruction](https://qengineering.eu/install-pytorch-on-jetson-nano.html) from Qengineering.  
+
+Verification  
+
+```python
+import torch
+print(torch.__version__)
+print(torch.cuda.is_available())
+import torchvision
+print(torchvision.__version__)
+```
+
+Might have some problems. 
+
+```
+Python 3.6.13 | packaged by conda-forge | (default, Feb 19 2021, 05:46:38)
+[GCC 9.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import torch
+Illegal instruction (core dumped)
+```
+
+This is a numpy 1.19.5 [issue](https://github.com/numpy/numpy/issues/18131), run `pip install numpy==1.19.4` to fix this. 
 
 ## libtorch
 
