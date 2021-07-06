@@ -47,6 +47,7 @@ __注意要在安装了torch的conda环境中执行这个指令__
 OpenCV如果只需要在python上使用可以用conda安装  
 如果要用C++而且需要最新版本，只能从源码编译  
 直接参考Qengineering给出的[教程](https://github.com/Qengineering/Install-OpenCV-Jetson-Nano)  
+这里给出一个libtorch+OpenCV的[示例工程](https://github.com/yuxiaoyuan0406/JetsonInstruction/tree/main/example/torchcv)作为参考  
 
 ## 其他
 __todo__
