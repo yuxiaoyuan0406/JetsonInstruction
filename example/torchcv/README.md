@@ -9,3 +9,5 @@ mkdir build && cd build
 cmake ..
 make && ./torchcv
 ```
+
+Ref: https://github.com/alantess/learntorch/tree/main/torchscript/L2
