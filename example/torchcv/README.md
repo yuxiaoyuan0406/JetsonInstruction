@@ -10,4 +10,5 @@ cmake ..
 make && ./torchcv
 ```
 
-Ref: https://github.com/alantess/learntorch/tree/main/torchscript/L2
+Ref: https://github.com/alantess/learntorch/tree/main/torchscript/L2  
+https://github.com/JetsonHacksNano/CSI-Camera/blob/master/simple_camera.cpp
