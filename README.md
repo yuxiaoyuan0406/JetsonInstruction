@@ -73,5 +73,7 @@ For python, install via conda.
 For c++, follow the [instructions](https://github.com/Qengineering/Install-OpenCV-Jetson-Nano) given by Qengineering.  
 A [demo](https://github.com/yuxiaoyuan0406/JetsonInstruction/tree/main/example/torchcv) for libtorch & OpenCV is given in this repo.  
 
+Note: Using OpenCV from conda-forge may not be able to use a gstreamer camera(CSI camera like rpi camera). See [issue#1](https://github.com/yuxiaoyuan0406/JetsonInstruction/issues/1) for more details.  
+
 ## one more thing
 __todo__
