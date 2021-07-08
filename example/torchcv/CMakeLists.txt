@@ -15,6 +15,11 @@ find_package(OpenCV REQUIRED)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${TORCH_CXX_FLAGS}")
 
+message(STATUS "libtorch status:")
+message(STATUS "    config: ${TORCH_INSTALL_PREFIX}")
+message(STATUS "    libraries: ${TORCH_LIBRARIES}")
+message(STATUS "    include path: ${TORCH_INCLUDE_DIRS}")
+
 message(STATUS "OpenCV library status:")
 message(STATUS "    config: ${OpenCV_DIR}")
 message(STATUS "    version: ${OpenCV_VERSION}")
@@ -23,6 +28,7 @@ message(STATUS "    include path: ${OpenCV_INCLUDE_DIRS}")
 
 include_directories(# ./include
     ${OpenCV_INCLUDE_DIRS}
+    ${TORCH_INCLUDE_DIRS}
 )
 add_executable(${PROJECT_NAME} main.cpp)
 target_link_libraries(${PROJECT_NAME} ${TORCH_LIBRARIES})
