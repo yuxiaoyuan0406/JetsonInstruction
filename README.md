@@ -32,7 +32,7 @@ One can download the script and run it easily.
 ## pytorch & torchvision
 
 Nvidia has a compiled-for-jetson version of [PyTorch](https://forums.developer.nvidia.com/t/pytorch-for-jetson-version-1-9-0-now-available/72048).  
-They offered a instraction as well. Check it on their website. 
+They offered an instraction as well. Check it on their website. 
 
 To install torchvision, check this [instruction](https://qengineering.eu/install-pytorch-on-jetson-nano.html) from Qengineering.  
 
