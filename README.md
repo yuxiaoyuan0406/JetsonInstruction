@@ -2,6 +2,8 @@
 
 An instraction for coding and other shit on Jetson nano  
 
+**This repo is archived. For more information please visit [my homepage](https://www.dennisyu.top/).**
+
 ## System and boot from ssd
 
 Go to [Nvidia](https://developer.nvidia.com/embedded/downloads) for the system image.  
